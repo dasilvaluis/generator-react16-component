@@ -20,4 +20,16 @@ class <%= name %> extends Component {
   exProp: PropTypes.string
 };
 
+<% if ('Y' === connectRedux) { %>
+const mapStateToProps = state => ({
+  // store state mappings
+});
+
+const mapDispatchToProps = {
+  dispatch
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(<%= name %>);
+<% } else { %>
 export default <%= name %>;
+<% } %>

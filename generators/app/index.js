@@ -3,20 +3,15 @@ const Generator = require('yeoman-generator');
 module.exports = class extends Generator {
   constructor(args, options) {
     super(args, options);
+
+    this.argument('name', { type: String, required: false });
   }
 
   // first stage
   async prompting() {
-    this.log('Welcome to React 16 Component Generator... 🤖');
+    this.log('Welcome to React16 Component Generator... 🤖');
 
-    this.answers = await this.prompt([
-      {
-        type: 'input',
-        name: 'name',
-        message: 'Component name',
-        validate: input => Boolean(input.length),
-        default: 'NewComponent'
-      },
+    const questionsArr = [
       {
         type: 'list',
         name: 'type',
@@ -24,14 +19,38 @@ module.exports = class extends Generator {
         choices: ['stateful', 'stateless'],
         default: 'stateful'
       },
-    ]);
+      {
+        type: 'list',
+        name: 'connectRedux',
+        message: 'Connect with redux?',
+        choices: ['N', 'Y'],
+        default: 'N'
+      },
+    ];
+
+    if (undefined === this.options.name) {
+      questionsArr.unshift(
+        {
+          type: 'input',
+          name: 'name',
+          message: 'Component name',
+          validate: input => Boolean(input.length),
+          default: 'NewComponent'
+        }
+      );
+    }
+
+    this.answers = await this.prompt(questionsArr);
+
   }
 
   // second stage
   writing() {
     this.log('Writing files... 📝');
 
-    const { type, name } = this.answers;
+    const { type, connectRedux } = this.answers;
+
+    const name = undefined !== this.answers.name ? this.answers.name : this.options.name;
 
     /**
      * Copy Component file
@@ -42,6 +61,7 @@ module.exports = class extends Generator {
         this.destinationPath(`components/${name}/${name}.jsx`),
         {
           name,
+          connectRedux
         },
       );
     } else {
@@ -50,6 +70,7 @@ module.exports = class extends Generator {
         this.destinationPath(`components/${name}/${name}.jsx`),
         {
           name,
+          connectRedux
         },
       );
     }
