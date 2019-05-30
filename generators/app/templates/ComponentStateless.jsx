@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+<% if ('Y' === connectRedux) { %>import { connect } from 'react-redux';<% } %>
 
 const <%= name %> = (props) => {
   return ();
