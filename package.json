@@ -1,0 +1,10 @@
+{
+  "name": "generator-react16-component",
+  "version": "1.0.0",
+  "description": "React Component Generator",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "yeoman-generator": "^4.0.1"
+  }
+}
