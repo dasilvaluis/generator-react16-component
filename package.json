@@ -1,6 +1,6 @@
 {
   "name": "generator-react16-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Component Generator",
   "main": "index.js",
   "license": "MIT",
