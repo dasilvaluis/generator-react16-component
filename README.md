@@ -22,7 +22,6 @@ yo react16-component [ComponentName]
 
 ```
 .
-
 ├── src
 │   ...
 │   ├── components
