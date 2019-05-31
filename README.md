@@ -24,10 +24,10 @@ yo react16-component [ComponentName]
 .
 ├── components
 │   ...
-├── ComponentName
-│   ├── index.js
-│   ├── ComponentName.jsx
-│   ├── ComponentName.scss
-│   ├── ComponentName.spec.js
+│   ├── ComponentName
+│   │   ├── index.js
+│   │   ├── ComponentName.jsx
+│   │   ├── ComponentName.scss
+│   │   └── ComponentName.spec.js
 │   ...
 ```
