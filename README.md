@@ -10,7 +10,7 @@ Yeoman generator for basic/empty React components.
 
 ## Installation
 ```
-yarn add generator react16-component
+yarn add generator-react16-component
 ```
 
 ## Usage
