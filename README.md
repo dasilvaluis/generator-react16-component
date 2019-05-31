@@ -22,12 +22,16 @@ yo react16-component [ComponentName]
 
 ```
 .
-├── components
+
+├── src
 │   ...
-│   ├── ComponentName
-│   │   ├── index.js
-│   │   ├── ComponentName.jsx
-│   │   ├── ComponentName.scss
-│   │   └── ComponentName.spec.js
+│   ├── components
+│   │   ...
+│   │   ├── ComponentName
+│   │   │   ├── index.js
+│   │   │   ├── ComponentName.jsx
+│   │   │   ├── ComponentName.scss
+│   │   │   └── ComponentName.spec.js
+│   │   ...
 │   ...
 ```
