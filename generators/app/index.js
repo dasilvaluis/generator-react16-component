@@ -58,7 +58,7 @@ module.exports = class extends Generator {
     if (type === 'stateful') {
       this.fs.copyTpl(
         this.templatePath('ComponentStateful.jsx'),
-        this.destinationPath(`components/${name}/${name}.jsx`),
+        this.destinationPath(`src/components/${name}/${name}.jsx`),
         {
           name,
           connectRedux
@@ -67,7 +67,7 @@ module.exports = class extends Generator {
     } else {
       this.fs.copyTpl(
         this.templatePath('ComponentStateless.jsx'),
-        this.destinationPath(`components/${name}/${name}.jsx`),
+        this.destinationPath(`src/components/${name}/${name}.jsx`),
         {
           name,
           connectRedux
@@ -80,7 +80,7 @@ module.exports = class extends Generator {
      */
     this.fs.copyTpl(
       this.templatePath('Component.scss'),
-      this.destinationPath(`components/${name}/${name}.scss`),
+      this.destinationPath(`src/components/${name}/${name}.scss`),
       {
         name,
       },
@@ -91,7 +91,7 @@ module.exports = class extends Generator {
      */
     this.fs.copyTpl(
       this.templatePath('Component.spec.js'),
-      this.destinationPath(`components/${name}/${name}.spec.js`),
+      this.destinationPath(`src/components/${name}/${name}.spec.js`),
       {
         name,
       },
@@ -102,7 +102,7 @@ module.exports = class extends Generator {
      */
     this.fs.copyTpl(
       this.templatePath('index.js'),
-      this.destinationPath(`components/${name}/index.js`),
+      this.destinationPath(`src/components/${name}/index.js`),
       {
         name,
       },
