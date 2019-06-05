@@ -2,7 +2,8 @@
   "name": "generator-react16-component",
   "version": "1.0.4",
   "description": "React Component Generator",
-  "main": "index.js",
+  "repository": "https://github.com/luism-s/generator-react16-component",
+  "main": "app/index.js",
   "license": "MIT",
   "dependencies": {
     "yeoman-generator": "^4.0.1"
