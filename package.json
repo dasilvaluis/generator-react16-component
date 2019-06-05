@@ -1,6 +1,6 @@
 {
   "name": "generator-react16-component",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "React Component Generator",
   "repository": "https://github.com/luism-s/generator-react16-component",
   "main": "app/index.js",
