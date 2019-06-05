@@ -9,6 +9,12 @@ Yeoman generator for basic/empty React components.
 * Connect with Redux using `mapStateToProps`, `mapDispatchToProps` and `connect()`
 
 ## Installation
+
+Globally:
+```
+yarn global add generator-react16-component
+```
+Locally:
 ```
 yarn add generator-react16-component
 ```
