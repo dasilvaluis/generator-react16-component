@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
 <% if ('Y' === connectRedux) { %>import { connect } from 'react-redux';<% } %>
 
 class <%= name %> extends Component {
