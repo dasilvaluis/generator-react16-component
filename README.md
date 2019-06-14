@@ -46,7 +46,7 @@ yo react16-component [ComponentName]
 │   ...
 ```
 
-## TODO:
+## TODO
 
 **Add possibility for yeoman config file for**
 
