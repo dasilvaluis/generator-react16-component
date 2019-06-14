@@ -45,3 +45,15 @@ yo react16-component [ComponentName]
 │   │   ...
 │   ...
 ```
+
+## TODO:
+
+**Add possibility for yeoman config file for**
+
+- SCSS/LESS/CSS
+- JSX/TSX
+- Test folder
+- Component folder
+- Style folder
+- Styles in CSS or JS
+- Typechecking (Proptypes/etc)
