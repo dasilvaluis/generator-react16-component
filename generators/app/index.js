@@ -16,8 +16,8 @@ module.exports = class extends Generator {
         type: 'list',
         name: 'type',
         message: 'Stateful or stateless component?',
-        choices: ['stateful', 'stateless'],
-        default: 'stateful'
+        choices: ['stateless', 'stateful'],
+        default: 'stateless'
       },
       {
         type: 'list',
