@@ -52,9 +52,7 @@ module.exports = class extends Generator {
 
     const name = undefined !== this.answers.name ? this.answers.name : this.options.name;
 
-    /**
-     * Copy Component file
-     */
+    // Component file
     if (type === 'stateful') {
       this.fs.copyTpl(
         this.templatePath('ComponentStateful.jsx'),
@@ -75,9 +73,7 @@ module.exports = class extends Generator {
       );
     }
 
-    /**
-     * Copy .SCSS file
-     */
+    // Styles file
     this.fs.copyTpl(
       this.templatePath('Component.scss'),
       this.destinationPath(`src/components/${name}/${name}.scss`),
@@ -86,9 +82,7 @@ module.exports = class extends Generator {
       },
     );
 
-    /**
-     * Copy test file
-     */
+    // Tests file
     this.fs.copyTpl(
       this.templatePath('Component.spec.js'),
       this.destinationPath(`src/components/${name}/${name}.spec.js`),
@@ -97,9 +91,7 @@ module.exports = class extends Generator {
       },
     );
 
-    /**
-     * Copy index file
-     */
+    // Index file
     this.fs.copyTpl(
       this.templatePath('index.js'),
       this.destinationPath(`src/components/${name}/index.js`),
