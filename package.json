@@ -1,6 +1,6 @@
 {
   "name": "generator-react16-component",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "React Component Generator",
   "repository": "https://github.com/luism-s/generator-react16-component",
   "keywords": [
@@ -24,7 +24,7 @@
     "test": "jest"
   },
   "jest": {
-     "testRegex": "./test/.*.js$",
-     "rootDir": "."
+    "testRegex": "./test/.*.js$",
+    "rootDir": "."
   }
 }

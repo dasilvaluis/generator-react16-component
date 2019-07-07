@@ -29,7 +29,7 @@ You can insert the component name directly as an argument with:
 yo react16-component [ComponentName]
 ```
 
-**Genrated files**
+**Generated files**
 
 ```
 .
@@ -46,14 +46,31 @@ yo react16-component [ComponentName]
 │   ...
 ```
 
+## Config file
+
+You can use a `.yo-rc.json` to configure a set of rules for the files creation.
+
+These are the available options:
+
+```json
+"generator-react16-component": {
+  "componentFileExtension": "jsx",
+  "componentsFolder": "src/components",
+  "testFileExtension": "spec.js",
+  "testFolder": "src/components/[ComponentName]",
+  "stylesFileExtension": "scss",
+  "createStylesFile": true
+}
+```
+
+Check [https://yeoman.io/authoring/storage.html](https://yeoman.io/authoring/storage.html) for more information.
+
+## Known issues
+
+- When sending the tests files to a different folder, the component import in the test file points to the same directory
+
 ## TODO:
 
 **Add possibility for yeoman config file for**
 
-- SCSS/LESS/CSS
-- JSX/TSX
-- Test folder
-- Component folder
-- Style folder
-- Styles in CSS or JS
 - Typechecking (Proptypes/etc)
