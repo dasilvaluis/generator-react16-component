@@ -54,12 +54,12 @@ These are the available options:
 
 ```json
 "generator-react16-component": {
-  "componentFileExtension": "jsx",
-  "componentsFolder": "src/components",
-  "testFileExtension": "spec.js",
-  "testFolder": "src/components/[ComponentName]",
-  "stylesFileExtension": "scss",
-  "createStylesFile": true
+  "componentFileExtension": "jsx", // ['jsx', 'tsx', 'js']
+  "componentsFolder": "src/components", // path string
+  "testFileExtension": "spec.js", // ['spec.js', 'test.js']
+  "testFolder": "src/components/[ComponentName]", // path string
+  "stylesFileExtension": "scss", // ['scss', 'css', 'less', 'styl']
+  "createStylesFile": true // [true, false]
 }
 ```
 
