@@ -45,7 +45,7 @@ describe('component generator', () => {
         }
       ).then(() => {
         assert.file(`src/components/${componentName}/${componentName}.jsx`);
-        assert.fileContent(`src/components/${componentName}/${componentName}.jsx`, `class ${componentName} extends Component {`);
+        assert.fileContent(`src/components/${componentName}/${componentName}.jsx`, `class ${componentName} extends React.Component {`);
       })
   });
 
